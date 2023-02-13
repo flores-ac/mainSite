@@ -1,5 +1,5 @@
 import React from 'react';
-import Typed from 'react-typed';
+
 import SEO from "../common/SEO";
 import {Link} from "react-router-dom";
 import { FiArrowRight } from "react-icons/fi";
@@ -38,17 +38,7 @@ const BusinessConsulting2 = () => {
                                 <div className="inner text-center">
                                     <span className="subtitle">DIGITAL CONSULTING AGENCY</span>
                                     <h1 className="title theme-gradient display-two">Unique Business <br /> {" "}
-                                        <Typed
-                                            strings={[
-                                                "Consulting.",
-                                                "Finance.",
-                                                "Agency.",
-                                            ]}
-                                            typeSpeed={80}
-                                            backSpeed={5}
-                                            backDelay={1000}
-                                            loop
-                                        />
+                                       
                                     </h1>
                                     <p className="description">We help our clients succeed by creating brand identities, digital experiences, and print materials.</p>
                                     <div className="button-group">

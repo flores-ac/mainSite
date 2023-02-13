@@ -1,5 +1,5 @@
 import React from 'react';
-import Typed from 'react-typed';
+
 import {Link} from "react-router-dom";
 import { FiArrowRight } from "react-icons/fi";
 import AccordionOne from '../accordion/AccordionOne';
@@ -12,17 +12,7 @@ const mission = () => {
                     <div className="col-lg-6">
                         <div className="mission-title">
                             <h2 className="title">Unique Mission <br /> {" "}
-                                <Typed className="theme-gradient"
-                                    strings={[
-                                        "Consulting.",
-                                        "Vission.",
-                                        "Agency.",
-                                    ]}
-                                    typeSpeed={80}
-                                    backSpeed={5}
-                                    backDelay={1000}
-                                    loop
-                                />
+                               
                             </h2>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia quaerat dolore laboriosam ea minus dignissimos, laudantium odit officia soluta, et deleniti fugit deserunt saepe, velit sapiente obcaecati? Vitae, iusto delectus?</p>
 
