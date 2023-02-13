@@ -1,5 +1,5 @@
 import React from 'react';
-import ScrollAnimation from "react-animate-on-scroll";
+import Fade from 'react-reveal/Fade';
 
 const TimelineData = [
     {
@@ -32,12 +32,9 @@ const TimelineTwo = ({classVar}) => {
                 {TimelineData.map((data , index) =>(
                     <div className={`col-lg-3 col-md-3 rn-timeline-single ${classVar}`} key={index}>
                         <div className="rn-timeline">
-                            <ScrollAnimation 
-                            animateIn="fadeInUp"
-                            animateOut="fadeInOut"
-                            animateOnce={true}>
+                            <Fade top>
                                 <h6 className="title">{data.title}</h6>
-                            </ScrollAnimation>
+                            </Fade>
                             <div className="progress-line">
                                 <div className="line-inner"></div>
                             </div>
@@ -46,12 +43,9 @@ const TimelineTwo = ({classVar}) => {
                                     <div className="dot-inner"></div>
                                 </div>
                             </div>
-                            <ScrollAnimation 
-                            animateIn="fadeInUp"
-                            animateOut="fadeInOut"
-                            animateOnce={true}>
+                            <Fade top>
                                 <p className="description">{data.description}</p>
-                            </ScrollAnimation>
+                            </Fade>
                         </div>
                     </div>
                 ))}

@@ -1,7 +1,7 @@
 import React from 'react';
 import CountUp from 'react-countup';
 import TrackVisibility from "react-on-screen";
-import ScrollAnimation from "react-animate-on-scroll";
+import Fade from 'react-reveal/Fade';
 
 const Data = [
     {
@@ -22,10 +22,7 @@ const CounterUpThree = ({textALign, counterStyle, column}) => {
         <div className="row">
             {Data.map((data, index) => (
                 <div className={`${column}`} key={index}>
-                    <ScrollAnimation 
-                    animateIn="fadeInUp"
-                    animateOut="fadeInOut"
-                    animateOnce={true}>
+                    <Fade top>
                         <div className={`count-box ${counterStyle} ${textALign}`}>
                             <TrackVisibility once>
                                 {({ isVisible }) => isVisible && 
@@ -34,7 +31,7 @@ const CounterUpThree = ({textALign, counterStyle, column}) => {
                             <h5 className="title">{data.countTitle}</h5>
                             <p className="description">{data.description}</p>
                         </div>
-                    </ScrollAnimation>
+                    </Fade>
                 </div>
             ))}
         </div>

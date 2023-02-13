@@ -1,5 +1,5 @@
 import React from 'react';
-import ScrollAnimation from "react-animate-on-scroll";
+import Fade from 'react-reveal/Fade';
 import { FiArrowRight } from "react-icons/fi";
 
 const callToActionData = {
@@ -16,27 +16,18 @@ const CalltoActionFive = () => {
                     <div className="col-lg-12">
                         <div className="inner">
                             <div className="content text-center">
-                                <ScrollAnimation 
-                                animateIn="fadeInUp"
-                                animateOut="fadeInOut"
-                                animateOnce={true}>
+                                <Fade top>
                                     <h2 className="title">{callToActionData.title}</h2>
-                                </ScrollAnimation>
-                                <ScrollAnimation 
-                                animateIn="fadeInUp"
-                                animateOut="fadeInOut"
-                                animateOnce={true}>
+                                </Fade>
+                                <Fade top>
                                     <h6 className="subtitle">{callToActionData.subtitle}</h6>
-                                </ScrollAnimation>
+                                </Fade>
 
-                                <ScrollAnimation 
-                                animateIn="fadeInUp"
-                                animateOut="fadeInOut"
-                                animateOnce={true}>
+                                <Fade top>
                                     <div className="call-to-btn text-center">
                                         <a className="btn-default btn-icon" href="#">{callToActionData.btnText} <i className="icon"><FiArrowRight /></i></a>
                                     </div>
-                                </ScrollAnimation>
+                                </Fade>
                             </div>
                         </div>
                     </div>

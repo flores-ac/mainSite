@@ -1,5 +1,5 @@
 import React from 'react';
-import ScrollAnimation from "react-animate-on-scroll";
+import Fade from 'react-reveal/Fade';
 
 const TimelineData = [
     {
@@ -54,55 +54,37 @@ const TimelineOne = () => {
                             <div className="row row--30 align-items-center">
                                 <div className="order-2 order-lg-1 col-lg-6 mt_md--40 mt_sm--40">
                                     <div className="content">
-                                        <ScrollAnimation 
-                                        animateIn="fadeInUp"
-                                        animateOut="fadeInOut"
-                                        animateOnce={true}>
+                                        <Fade top>
                                             <span className="date-of-timeline">{data.date}</span>
-                                        </ScrollAnimation>
+                                        </Fade>
 
-                                        <ScrollAnimation 
-                                        animateIn="fadeInUp"
-                                        animateOut="fadeInOut"
-                                        animateOnce={true}>
+                                        <Fade top>
                                             <h2 className="title">{data.title}</h2>
-                                        </ScrollAnimation>
+                                        </Fade>
 
-                                        <ScrollAnimation 
-                                        animateIn="fadeInUp"
-                                        animateOut="fadeInOut"
-                                        animateOnce={true}>
+                                        <Fade top>
                                             <p className="description">{data.description}</p>
-                                        </ScrollAnimation>
+                                        </Fade>
 
                                         <div className="row row--30">
                                             {data.workingStep.map((data, index)=>(
                                                 <div className="col-lg-6 col-md-6 col-12" key={index}>
                                                     <div className="working-list">
-                                                        <ScrollAnimation 
-                                                        animateIn="fadeInUp"
-                                                        animateOut="fadeInOut"
-                                                        animateOnce={true}>
+                                                        <Fade top>
                                                             <h5 className="working-title">{data.stepTitle}</h5>
-                                                        </ScrollAnimation>
+                                                        </Fade>
 
-                                                        <ScrollAnimation 
-                                                        animateIn="fadeInUp"
-                                                        animateOut="fadeInOut"
-                                                        animateOnce={true}>
+                                                        <Fade top>
                                                             <p>{data.stepDescription}</p>
-                                                        </ScrollAnimation>
+                                                        </Fade>
                                                     </div>
                                                 </div>
                                             ))}
                                         </div>
                                         <div className="read-morebtn">
-                                            <ScrollAnimation 
-                                            animateIn="fadeInUp"
-                                            animateOut="fadeInOut"
-                                            animateOnce={true}>
+                                            <Fade top>
                                                 <a className="btn-default btn-large round" href="/contact"><span>Get Started Now</span></a>
-                                            </ScrollAnimation>
+                                            </Fade>
                                         </div>
                                     </div>
                                 </div>

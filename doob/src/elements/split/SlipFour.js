@@ -1,7 +1,7 @@
 import React from 'react';
 import CountUp from 'react-countup';
 import TrackVisibility from "react-on-screen";
-import ScrollAnimation from "react-animate-on-scroll";
+import Fade from 'react-reveal/Fade';
 
 const Data = [
     {
@@ -28,18 +28,12 @@ const SlipFour = () => {
                 <div className="row no-gutters radius-10 align-items-center">
                     <div className="order-2 order-lg-1 col-lg-12 col-xl-6 col-12">
                         <div className="split-inner">
-                            <ScrollAnimation 
-                            animateIn="fadeInUp"
-                            animateOut="fadeInOut"
-                            animateOnce={true}>
+                           <Fade top>
                                 <h4 className="title">Continue Your Business With Us.</h4>
-                            </ScrollAnimation>
-                            <ScrollAnimation 
-                            animateIn="fadeInUp"
-                            animateOut="fadeInOut"
-                            animateOnce={true}>
+                            </Fade>
+                           <Fade top>
                                 <p className="description">Randomised words which don't look even slightly believable. If you are to use a passage of Lorem Ipsum. You need to be sure there isn't anything embarrassing hidden in the middle of text. in some form, by injectedeed bedhumour, or randomised even .</p>
-                            </ScrollAnimation>
+                            </Fade>
 
                             <div className="row">
                                 {Data.map((data, index) => (
