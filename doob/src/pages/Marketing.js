@@ -5,7 +5,7 @@ import HeaderTopBar from '../common/header/HeaderTopBar';
 import FooterThree from '../common/footer/FooterThree';
 
 
-import Typed from 'react-typed';
+
 import {Link} from "react-router-dom";
 import { FiArrowRight } from "react-icons/fi";
 import ServiceFour from '../elements/service/ServiceFour';
@@ -33,19 +33,7 @@ const Marketing = () => {
                         <div className="row">
                             <div className="col-lg-8 order-2 order-lg-1 mt_md--40 mt_sm--40">
                                 <div className="inner text-start">
-                                    <h1 className="title theme-gradient display-two">Marketing Agency <br /> For {" "}
-                                        <Typed
-                                            strings={[
-                                                "Freelancer.",
-                                                "Developer.",
-                                                "Startup.",
-                                            ]}
-                                            typeSpeed={80}
-                                            backSpeed={5}
-                                            backDelay={1000}
-                                            loop
-                                        />
-                                    </h1>
+                                
                                     <p className="description">We help our clients succeed by creating brand identities, digital experiences, and print materials.</p>
                                     <div className="button-group">
                                         <Link className="btn-default btn-medium btn-border round btn-icon" to="#">New Customer <i className="icon"><FiArrowRight /></i></Link>
